@@ -1,0 +1,106 @@
+<!-- htmlのバージョン指定 -->
+<!DOCTYPE html>
+<!-- 日本語のページ -->
+<html lang="ja">
+  <head>
+    <!-- 文字コード指定 -->
+    <meta charset="UTF-8">
+    <!-- viewportの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- responsive.css　読み込み（必ず「viewport」よりも下の行に記述） -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- フリーのアイコンwebフォント『Font Awesome』読み込み -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- ページタイトル指定 -->
+    <title>sample</title>
+  </head>
+
+<body>
+  <header>
+    <div class="header-top">
+        <p>IFAドットコム -IFA紹介や無料投資相談、IFA検索</p>
+
+      <div class="header-right">
+        <a href="#" class="registration">無料会員登録</a>
+        <a href="#" class="login">ログイン</a>
+        <a href="sample1-page2.html" class="ifa-navi">IFAの方はこちら</a>
+      </div>
+    </div>
+    <div class="header-second">
+      <div class="header-logo">
+        <p>IFAドットコム</p>
+      </div>
+      <div class="header-tel">
+        <p>IFAの無料紹介サービス|24時間受付</p>
+        <P>tel:〇〇-〇〇-〇〇</p>
+      </div>
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li>会社概要</li>
+        <li>採用情報</li>
+        <li>取扱商品</li>
+      </ul>
+    </div>
+    <!-- スマートフォン表示のメニューバー -->
+    <!-- <a href="https://www.youtube.com/watch?v=FcWGdkoo0Fs" class="menu-icon">
+      <span class="fa fa-bars menu-icon"></span>
+    <a> -->
+
+    <div id="login-modal" class="login-modal-wrapper">
+      <!-- ログインのモーダル部分のHTMLを貼り付けてください -->
+      <div class="modal">
+        <div id="login-form">
+          <h2>Emailログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+　<!-- メイン部分開始 -->
+  <div class="main">
+    <div class="main-background-image">
+      <div class="news">
+        <img src="main_19.jpg">
+        <h4>news1</h4>
+      </dev>
+    </div>
+    <h2>IFAとは？</h2>
+    <p>IFAとは独立・中立的な立場から資産運用のアドバイスを行う専門家です。<br>
+    日本では「独立系ファイナンシャルアドバイザー」とも呼びます。<br>
+    株や債券、投資信託などの売買の仲介を行う金融商品仲介業者に所属する外務員のことです。<br>
+    簡単に言うと、金融機関から独立した資産運用アドバイザーであり、金融商品の仲介も行える業者です。</p>
+    <div class = "btn-wrapper">
+      <a href="#" class="btn">IFAとは？を表示</a>
+    </div>
+    <h1>ここに表示</h1>
+    <div id="content"></div>
+
+    <form>
+      <div>質問</div>
+      <input id="question" type="text">
+    </form>
+  </div>
+<!-- メイン部分終了 -->
+
+
+
+  <!-- フッター部分 -->
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="jquery.xdomainajax.js"> </script>
+</body>
+
+</html>
