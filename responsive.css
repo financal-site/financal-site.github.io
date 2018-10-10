@@ -3,7 +3,7 @@
 /*  */
 }
 /* スマートフォン表示のCSS */
-@media (max-width:700px){
+@media (max-width:800px){
   header{
     /* 画面幅によってwidhtが変わるように設定 */
     max-width:1300px;
@@ -20,11 +20,14 @@
     color:white;
   }
   /* メニューバークラスのdisplayをnoneに指定 */
-  /* .〇〇{
+   .header-right {
     display:none;
-  } */
+  }
   /* menu-iconクラスのdisplayをblockに*/
-  .menu-icon{
+  .menu-icon {
+    padding:5px 15px 0 0;
+    float:right;
+    height:50px;
     display:block;
   }
 }
