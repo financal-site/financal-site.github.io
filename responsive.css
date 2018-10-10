@@ -1,0 +1,30 @@
+/* タブレット表示のCSS */
+@media(max-width:1000px){
+/*  */
+}
+/* スマートフォン表示のCSS */
+@media (max-width:700px){
+  header{
+    /* 画面幅によってwidhtが変わるように設定 */
+    max-width:1300px;
+    width:100%;
+    /* 要素の高さを指定 */
+    height:100px;
+    /* 要素を画面上に固定 */
+    position:fixed;
+    top:0px;
+    /* 要素の重なり順指定 */
+    z-index:10;
+    /* 画面の色を指定 */
+    background-color: rgba(34, 49, 52, 0.9);
+    color:white;
+  }
+  /* メニューバークラスのdisplayをnoneに指定 */
+  /* .〇〇{
+    display:none;
+  } */
+  /* menu-iconクラスのdisplayをblockに*/
+  .menu-icon{
+    display:block;
+  }
+}
