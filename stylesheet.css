@@ -3,10 +3,12 @@
   box-sizing:border-box;
 }
 /* リンクの下線消去 */
-a {
-  text-decoration: none;
+a{
+  text-decoration:none;
 }
-/* body全体の定義 */
+li{
+  list-style:none;
+}
 body{
   /* 要素の幅の上限指定 */
   max-width:1400px;
@@ -14,28 +16,11 @@ body{
   width:100%;
   /* 要素を中央に配置 */
   margin:0 auto;
-  /* 文字の種類を指定 */
-  /* font-family:serif; */
-  /* font-family: "Avenir Next"; */
-  /* font-family: "Hiragino Kaku Gothic ProN"; */
-}
-/* headerの定義 */
-header{
-  /* 要素の幅の上限指定 */
-  max-width:1400px;
-  /* 画面幅によってwidhtが変わるように設定 */
-  width:100%;
-  /* 要素の高さを指定 */
-  height:100px;
-  /* 要素を画面上に固定 */
-  position:fixed;
-  top:0px;
-  /* 要素の重なり順指定 */
-  z-index:10;
-
 }
 
 .header-top{
+  max-width:1400px;
+  width:100%;
   background-color: rgba(34, 49, 52, 1);
   color:white;
   height:50px;
@@ -44,211 +29,146 @@ header{
   float:left;
   margin:0 0 0 10px;
   line-height: 50px;
-  font-size:9px;
 }
 .header-top a{
-  float:left;
-  margin:0 0 0 10px;
+  float:right;
+  margin:0 10px 0 0;
   line-height: 50px;
   color:white;
-}
-
-.header-right{
-  float:right;
-  height:50px;
-}
-/* 会員登録 */
-.registration{
-  color:white;
-  float:left;
-  margin:0 15px 0 0;
-  line-height:50px;
 }
 .registration:hover{
   transition:0.3s;
   background-color: rgba(255,255,255,0.5);
 }
 .registration:active{
-  color:red;
-}
-
-/* ログイン */
-.login{
-  color:white;
-  float:left;
-  margin:0 15px 0 0;
-  line-height:50px;
+  color:black;
 }
 .login:hover{
   transition:0.3s;
   background-color: rgba(255,255,255,0.5);
 }
 .login:active{
-  color:red;
-}
-
-/* モーダル追加 */
-.login-modal-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  /* display: none;を追加してください */
-  display:none;
-}
-
-.modal {
-  position: absolute;
-  top: 20%;
-  left: 34%;
-  background-color: #e6ecf0;
-  padding: 20px 0 40px;
-  border-radius: 10px;
-  width: 450px;
-  height: auto;
-  text-align: center;
-}
-
-.fa-times {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  color: rgba(128, 128, 128, 0.46);
-  cursor: pointer;
-}
-
-#signup-form, #login-form {
-  width: 100%;
-}
-
-#signup-form h2, #login-form h2 {
-  color: #5f5d60;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-}
-
-#signup-form input, #login-form input {
-  width: 320px;
-  margin-bottom: 20px;
-  font-size: 12px;
-  padding: 12px 12px;
-  border: 1px solid #d0d5d8;
-  border-radius: 5px;
-}
-
-#submit-btn {
-  display: inline-block;
-  padding: 14px 140px;
-  background-color: #5dca88;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  margin: 10px auto;
-  cursor: pointer;
-}
-
-/* IFAの方はこちら */
-.ifa-navi{
-  color:white;
-  float:left;
-  margin:0 15px 0 0;
-  line-height:50px;
+  color:black;
 }
 .ifa-navi:hover{
   transition:0.3s;
   background-color: rgba(255,255,255,0.5);
 }
 .ifa-navi:active{
-  color:red;
+  color:black;
 }
 
-/* ヘッダーのロゴ部分 */
 .header-second{
   max-width:1400px;
   width:100%;
   background-color: rgba(192, 192, 192, 1);
   color:white;
-  height:50px;
+  height:80px;
 }
-.header-logo{
+.header-second h1{
   float:left;
-  line-height:50px;
-  margin-left:10px;
-  font-size:20px;
+  line-height:80px;
+  margin:0 0 0 10px;
 }
-.header-logo p{
+.header-second ul{
+  height:80px;
+  width:300px;
+  padding:0 0 0 0;
   margin:0;
-}
-ul{
-  margin:0;
-}
-.header-menu{
-  margin:0;
-  height:100px;
-  width:700px;
-  background-color:rgba(192, 192, 192, 0.9);
-  z-index:11;
-  display: none;
-}
-.header-tel{
   float:right;
-  height:50px;
 }
-.header-tel p{
-  margin:0 10px 0 0;
-  line-height:25px;
-}
-
-/* スマートフォン表示のメニューバーを非表示にする */
-.menu-icon {
-  color: white;
-  float:left;
-  font-size: 30px;
-  padding: 21px 5px;
-  /* 通常は表示しない */
-  display:none;
-}
-
-/* headerのメイン部分 */
-
-
-/* main部分 */
-.main{
-  width:100%;
-  height:1500px;
-  background-color:#f7f7f7;
+.service{
+  line-height:40px;
   text-align:center;
 }
-.main img{
+.tel{
+  line-height:30px;
+  width:80px;
+  margin:3px 3px 3px 20px;
+  padding:0;
+  text-align:center;
+  float:left;
+  border:2px white solid;
+  border-radius:10px;
+}
+.tel-number{
+  line-height:40px;
+  margin:0 0 0 10px;
+  float:left;
+  font-size:23px;
+}
+
+
+
+.main{
+  height:1000px;
+}
+.main-top{
+  height:500px;
+  background-image:url(../picture/main.jpg);
+  background-size:cover;
+}
+.main-top h2{
+  margin:0;
+  line-height:500px;
+  font-size:40px;
+  color:white;
+  text-align:center;
+}
+.main-second{
+  height:500px;
+}
+.menu{
+  height:200px;
+  background-color:#f7f7f7;
+  width:25%;
+  float:left;
+}
+.menu-box{
+  margin:0 10px;
+}
+.menu-box h4{
+  margin-top:10px;
+}
+.one{
+  background-color:white;
+  text-align:center;
+  }
+.two{
+  background-color:white;
+  text-align:center;
+  }
+.three{
+  background-color:white;
+  text-align:center;
+  }
+.four{
+  background-color:white;
+  text-align:center;
+}
+
+
+
+
+.footer-top ul{
+  margin:0;
+}
+.footer-top{
+  height:30px;
   max-width:1400px;
   width:100%;
+  background-color: #f8f8f8;
 }
-.main p{
-  display:none;
+.footer-top li{
+  float:left;
 }
-.btn-wrapper{
-  padding:15px 0;
-}
-.btn{
-  background-color:#239b76;
-  padding:8px 24px;
-  color:white;
-  display:inline-block;
-  opacity:0.8;
-  border-radius:10px;
-  text-align:center;
-}
-.btn:hover{
-  opacity:1;
-}
-
-
-footer{
+.footer-second{
+  height:50px;
+  max-width:1400px;
   width:100%;
-  height:150px;
-  background-color:rgba(34, 49, 52, 0.9);
-  color:white;
+  background-color: #f8f8f8;
+}
+.footer-second li{
+  float:left;
+  background-color: #eee;
 }
