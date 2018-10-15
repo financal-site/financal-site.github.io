@@ -105,7 +105,7 @@ body{
 }
 .main-top{
   height:500px;
-  background-image:url(../picture/main.jpg);
+  background-image:url(main.jpg);
   background-size:cover;
 }
 .main-top h2{
